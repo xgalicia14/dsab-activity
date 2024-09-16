@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Activtiy 1 DSA</title>
+</head>
+<body>
+
+    <script>
+        class Student {
+
+    constructor(idNumber, firstName, middleName, lastName, birthdate, username, emailAddress, password, homeAddress) {
+        this.idNumber = idNumber;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.birthdate = birthdate;
+        this.username = username;
+        this.emailAddress = emailAddress;
+        this.password = password;
+        this.homeAddress = homeAddress;
+  }
+}
+
+class Address {
+  constructor(houseNumber, purokOrZone, barangay, municipality, province) {
+    this.houseNumber = houseNumber;
+    this.purokOrZone = purokOrZone;
+    this.barangay = barangay;
+    this.municipality = municipality;
+    this.province = province;
+  }
+}
+
+const homeAddress = new Address(
+  '38-7',         // houseNumber
+  'Purok 2',      // purokOrZone
+  'Barangay 34',  // barangay
+  'Legazpi City',   // municipality
+  'Albay'           // province
+);
+
+const student1 = new Student(
+  '123456',                       // idNumber
+  'Carl',                         // firstName
+  'D.',                           // middleName
+  'Galicia',                      // lastName
+  '2003-07-17',                   // birthdate
+  'xgalicia14',                   // username
+  'carlgalicia3@gmail.com',       // emailAddress
+  'hulaanmo14',                   // password
+  homeAddress                     // homeAddress (Address object)
+);
+
+console.log(student1);
+
+    </script>
+    
+</body>
+</html>
